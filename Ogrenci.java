@@ -37,7 +37,7 @@ public class Ogrenci{
     }
     public String getFakulte() {
         return fakulte;
-    }
+    } 
 
    
 

@@ -28,45 +28,35 @@ public   class app {
 
 public static void main(String[] args) throws Exception{
 Ogrenci adOgrenci = new Ogrenci("sahin", "sanli", 42788, "yazilim", "of tek fak", 3, 2022);
-System.out.println("ad = " + adOgrenci.getAd());
 
-int data = 40;
-int data2 = 50;
-System.out.println(data*data2);
+
+Ogrenci ogrenci1 = new Ogrenci("Ali","Veli", 1, "Yazilim","Teknoloji", 2024, 1);
+Ogrenci ogrenci2 = new Ogrenci("Ali","Veli", 2,"Yazilim","Teknoloji", 2024, 1);
+BilgiPaketi bilgiPaketi = new BilgiPaketi();
+TemelDers ders1 = new TemelDers("Matematik",101,"Güz",
+false, akademisyen1, 2);
+UygulamaliDers lab1 = new UygulamaliDers("YTM",301,
+false, akademisyen2, 3);
+
+ders1.derseYazilim(ogrenci1);
+ders1.derseYazilim(ogrenci2);
+ders1.derseYazilim(ogrenci3);
+lab1.derseYazilim(ogrenci1);
+lab1.derseYazilim(ogrenci3);
+ders1.listeyiYazdir();
+lab1.listeyiYazdir();
+
+
+
+
+
+
+
  
 
-int userScore = 423;
-int maxScore = 500;
 
-float percentage = (float) userScore/maxScore * 100;
 
-System.out.println("user's  percentage is: " + percentage);
 
-int day = 4;
-
- switch (day) {
-    case 4:
-        System.out.println("thursday");
-        break;
-    default:
-        throw new AssertionError();
-}
-
-myMethod();
-
-int myNum = plusMethod(8, 7);
-double myNum2 = plusMethod(8.789 , 9.679);
-
-System.out.println(myNum);
-System.out.println(myNum2);
-
-int number = 5;
-int result = faktr(number);
-System.out.println(result);
-
-deneme d = new deneme();
-d.fonk();
-d.fonk2(300);
 
 
 
