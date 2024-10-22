@@ -38,6 +38,9 @@ public class Ogrenci{
     public String getFakulte() {
         return fakulte;
     } 
+    public String getAdSoyad() {
+        return getAd() + getSoyad();
+        }
 
    
 

@@ -1,10 +1,11 @@
-public abstract  class Akademisyen extends Dersler{
+public class Akademisyen {
 
     String ad;
     String soyad;
 
-        public Akademisyen() {
-            super(null, 0, 0, false, null, 0);
-        }
+    public Akademisyen(String ad,String soyad){
+        this.ad=ad;
+        this.soyad=soyad;
+    }
     
     }

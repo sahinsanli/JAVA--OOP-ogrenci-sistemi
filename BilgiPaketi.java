@@ -1,20 +1,27 @@
-private List<Ders> tumDersler;
 
-public class BilgiPaketi() {
+import java.util.ArrayList;
+import java.util.List;
+
+public class BilgiPaketi {
+
+private List<Dersler> tumDersler;
+
+public BilgiPaketi() {
     tumDersler = new ArrayList<>();
 }
 
-public void dersEkle(Ders ders) {
+public void dersEkle(Dersler ders) {
     tumDersler.add(ders);
 }
 
 public void transkriptSorgula(Ogrenci ogrenci) {
     System.out.println(ogrenci.getAdSoyad() + " Ders Listesi:");
-    for (Ders ders : tumDersler) {
-        if (ders.ogrenciKayitliMi(ogrenci.getNumara())) {
-            System.out.print(ders.dersAdi + " dersi ");
+    for (Dersler ders : tumDersler) {
+        if (ders.ogrenciKayitliMi(ogrenci.getNo())) {
+            System.out.print(ders.dAd + " dersi ");
             System.out.print("kredisi " + ders.kredi + " ");
             System.out.println("harf notu " + ders.harfNotu(0) + " ");
         }
     }
+}
 }
